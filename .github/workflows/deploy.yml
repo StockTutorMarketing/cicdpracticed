@@ -37,6 +37,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker pull kumarrohitdev/practicw2:latest
-          sudo docker stop practicw2 || true
-          sudo docker rm practicw2 || true
+          sudo docker stop lucid_nash || true
+          sudo docker rm lucid_nash || true
           sudo docker run -it -d -p 3000:3000 kumarrohitdev/practicw2   
