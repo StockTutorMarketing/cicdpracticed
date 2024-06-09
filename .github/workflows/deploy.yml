@@ -22,9 +22,9 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./Dockerfile 
+        file: ./Dockerfile   
         push: true
-        tags: 100xdevs/web-app:latest  # Replace with your Docker Hub username and repository
+        tags: kumarrohitdev/cicidpractice2:latest  # Replace with your Docker Hub username and repository
 
     - name: Verify Pushed Image
-      run: docker pull 100xdevs/web-app:latest  # Replace with your Docker Hub username and repository
+      run: docker pull kumarrohitdev/cicidpractice2:latest  # Replace with your Docker Hub username and repository
